@@ -155,7 +155,9 @@ footer a {
 footer > div {
     padding: 1rem;
 }
-
+.wrapper {
+    
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -232,3 +234,68 @@ form {
 .bold {
     font-weight: bold;
 }
+
+/*** MEDIA QUERIES ***/
+
+@media only screen and (max-width: 800px) {
+    header {
+        
+    }
+    nav {
+        
+    }
+  }
+  
+@media only screen and (max-width: 500px) {
+    div.wrapper header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 22rem;
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+        background-color: white;
+    }
+
+    div.wrapper header .name {
+        margin-left: 0;
+    }
+    
+    div.wrapper header nav {
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        margin-left: 0;
+    }
+    
+
+    nav a {
+        border: .1rem solid black;
+        text-decoration: none;
+        padding: 1rem;
+        margin-left: 0;
+        margin-right: -.4rem;
+        font-size: 1.5rem;
+        background-color: white;
+        color: black;
+        text-transform: capitalize;
+        text-align: center;
+    }
+    
+    nav a:hover {
+        border: none;
+        text-decoration: none;
+        padding: 1rem;
+        margin-left: 0;
+        margin-right: -.4rem;
+        font-size: 1.5rem;
+        background-color: black;
+        color: white;
+    }
+
+    section.section1 {
+        flex-direction: column;
+    
+    }
+  }
